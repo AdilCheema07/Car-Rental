@@ -6,6 +6,11 @@
     <title>Car Rental</title>
     <!-- CSS Style Sheet -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome  -->
+    <script src="https://kit.fontawesome.com/d58ccf3019.js" crossorigin="anonymous"></script>
+
+    
 </head>
 <body>
     <nav id="Navbar-Section">
@@ -30,11 +35,11 @@
             <div class="nav-left">
                 <img class="logo" src="images/Logo.png" alt="Not Available">
             </div>
-            <div class="mobile-right">
-
+            <div class="nav-right">
+                <i id="hamicon" onclick="toggleMobileMenu()" class="fa-solid fa-bars fa-2xl" style="color: #fab700;"></i>
             </div>
         </div>
-        <div>
+        <div id="mobile-menu">
             <ul id="mobile-list">
                 <li class="mobile-item">Home</li>
                 <li class="mobile-item">About</li>
@@ -45,5 +50,7 @@
                 <li class="mobile-item">Contact</li>
         </div>
     </nav>
+
+    <script src="index.js"></script>
 </body>
 </html>

@@ -4,7 +4,7 @@ body{
     box-sizing: border-box;
 }
 .themecolor{
-    color: #FAB700;
+    color: rgb(250, 183, 0);
 }
 
 /* Navbar Section  */
@@ -19,8 +19,8 @@ body{
     height: 100vh;
 }
 #navbar{
-     display: flex;
-    padding: 1.5rem;
+     display: none;
+    padding: 1rem 5rem;
     /* background-color: rgba(222, 221, 221, 0.127); */
     color: #FFFFFF;
 }
@@ -48,15 +48,38 @@ body{
 }
 .nav-right{
     width: 50%;
+    text-align: right;
 }
 
 /* Mobile Navbar  */
 #mobile-navbar{
-    display: none;
+    display: flex;
+    align-items: center;
+    padding: 0rem 5rem;
 }
 #mobile-list{
-    display: none;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 0;
+    z-index: 100;
+    padding: 0;
+    list-style: none;
+    /* background-color: rgba(250, 183, 0, 0.281); */
 }
 .mobile-item{
     color: #FFFFFF;
+    font-size: 2.5rem;
+    margin: 1.5rem auto;
+    padding: .2rem 0rem;
+    width: 95vw;
+    text-align: center;
+    border: 2px solid rgb(63, 63, 63);
+}
+.mobile-item:hover{
+    color: #FAB700;
+    cursor: pointer;
+}
+#hamicon{
+    cursor: pointer;
 }
