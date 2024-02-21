@@ -9,8 +9,16 @@ body{
 .white{
     color: #FFFFFF;
 }
+.pheading{
+    font-size: 3rem;
+    font-weight: 200;
+}
+.ppara{
+    color: grey;
+    font-size: 1.5rem;
+}
 .sheading{
-    font-size: 2.5rem;
+    font-size: 3rem;
     color: #FFFFFF;
     font-weight: 200;
 }
@@ -158,4 +166,18 @@ body{
 #form-btn:hover{
     background-color: #fab70000;
     border: 2px solid #FAB700;
+}
+
+/* Services Section  */
+
+#services{
+    text-align: center;
+    padding: 5rem;
+}
+#service-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.grid-box-title{
+    display: flex;
 }
