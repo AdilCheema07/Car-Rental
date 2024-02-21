@@ -19,6 +19,19 @@ body{
     color: #FFFFFF;
     font-weight: 200;
 }
+.pbtn{
+    background-color: #FAB700;
+    border: none;
+    padding: 1.2rem 3rem;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-weight: 100;
+    font-size: .8rem;
+}
+.pbtn:hover{
+    background-color: #fab70000;
+    border: 2px solid #FAB700;
+}
 
 /* Navbar Section  */
 #Navbar-Section::before{
@@ -104,12 +117,45 @@ body{
     width: 50%;
 }
 #banner-right{
-    width: 50%;
+    width: 30%;
+    text-align: center;
+    margin: 0 auto;
 }
 
 /* Form  */
+#form{
+    background-color: rgba(128, 128, 128, 0.241);
+    padding: 5rem 2rem;
+}
+#form-heading{
+    color: #FFFFFF;
+    text-align: left;
+    font-size: 2rem;
+}
 .ffield{
     display: block;
-    width: 50%;
+    width: 100%;
+    padding: .5rem 0;
+    margin: 1rem 0;
+
+}
+.hfield{
+    width: 47%;
+    margin: .5rem 0;
     padding: .5rem;
+}
+.field-box{
+    cursor: pointer;
+}
+#form-btn{
+    width: 100%;
+    padding: .5rem;
+    background-color: #FAB700;
+    border: none;
+    cursor: pointer;
+    color: #FFFFFF;
+}
+#form-btn:hover{
+    background-color: #fab70000;
+    border: 2px solid #FAB700;
 }
