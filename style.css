@@ -6,6 +6,19 @@ body{
 .themecolor{
     color: rgb(250, 183, 0);
 }
+.white{
+    color: #FFFFFF;
+}
+.sheading{
+    font-size: 2.5rem;
+    color: #FFFFFF;
+    font-weight: 200;
+}
+.lpara{
+    font-size: 1.5rem;
+    color: #FFFFFF;
+    font-weight: 200;
+}
 
 /* Navbar Section  */
 #Navbar-Section::before{
@@ -19,7 +32,7 @@ body{
     height: 100vh;
 }
 #navbar{
-     display: none;
+     display: flex;
     padding: 1rem 5rem;
     /* background-color: rgba(222, 221, 221, 0.127); */
     color: #FFFFFF;
@@ -53,14 +66,12 @@ body{
 
 /* Mobile Navbar  */
 #mobile-navbar{
-    display: flex;
+    display: none;
     align-items: center;
     padding: 0rem 5rem;
 }
 #mobile-list{
-    display: flex;
-    flex-direction: column;
-    position: relative;
+    position: absolute;
     top: 0;
     z-index: 100;
     padding: 0;
@@ -82,4 +93,23 @@ body{
 }
 #hamicon{
     cursor: pointer;
+}
+
+#banner{
+    z-index: 1;
+    padding: 5rem;
+    display: flex;
+}
+#banner-left{
+    width: 50%;
+}
+#banner-right{
+    width: 50%;
+}
+
+/* Form  */
+.ffield{
+    display: block;
+    width: 50%;
+    padding: .5rem;
 }
