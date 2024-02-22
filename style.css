@@ -281,3 +281,51 @@ body{
 #net-right{
     padding: 5rem;
 }
+
+/* Footer Section  */
+
+#Footer-Section{
+    background-color: #04091E;
+}
+#footer{
+    display: grid;
+    padding: 5rem;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: .5rem;
+}
+.footer-heading{
+    font-size: 2rem;
+    color: #FFFFFF;
+
+}
+.footer-item{
+    transition: all 0.2s ease-in 0s;
+}
+.footer-item:hover{
+    color: #FAB700;
+    cursor: pointer;
+    text-decoration: underline 3px #FAB700;
+    text-underline-offset: 1rem;
+}
+.sicon{
+    padding: 1rem;
+    color: #FFFFFF;
+    transition: all 0.2s ease-in 0s;
+}
+.sicon:hover{
+    color: #FAB700;
+    cursor: pointer;
+    text-decoration: underline 3px #FAB700;
+    text-underline-offset: 1rem;
+}
+#footer-email{
+    display: flex;
+    align-items: center;
+}
+.arrow-icon{
+    color: #FFFFFF;
+    display: inline;
+    background-color: #FAB700;
+    padding: 0 .5rem;
+    cursor: pointer;
+}
