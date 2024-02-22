@@ -22,6 +22,10 @@ body{
     color: #FFFFFF;
     font-weight: 200;
 }
+.subheading{
+    font-size: 2rem;
+    font-weight: 200;
+}
 .lpara{
     font-size: 1.5rem;
     color: #FFFFFF;
@@ -35,6 +39,7 @@ body{
     cursor: pointer;
     font-weight: 100;
     font-size: .8rem;
+    transition: all 0.2s ease-in 0s;
 }
 .pbtn:hover{
     background-color: #fab70000;
@@ -96,6 +101,7 @@ body{
     z-index: 100;
     padding: 0;
     list-style: none;
+    /* display: none; */
     background-color: rgb(132, 119, 119);
 }
 .mobile-item{
@@ -163,6 +169,7 @@ body{
     border: none;
     cursor: pointer;
     color: #FFFFFF;
+    transition: all 0.2s ease-in 0s;
 }
 #form-btn:hover{
     background-color: #fab70000;
@@ -178,27 +185,82 @@ body{
 #service-grid{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    text-align: left;
+}
+.grid-box{
+    transition: all 0.3s ease-in 0s;
+    padding: 2rem;
+    cursor: pointer;
+    border-radius: 1rem;
+}
+.grid-box:hover{
+    box-shadow: .2rem .2rem 2rem rgba(0, 0, 0, 0.3);
 }
 .grid-box-title{
     display: flex;
+    align-items: center;
+}
+.grid-icon{
+    width: 35px;
+}
+.counter-text{
+    font-size: 1.5rem;
+    font-weight: 100;
 }
 
 #Experience-Section{
     padding: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     
 }
 #Experience-Section::before{
     content: '';
     background: url('images/image5.jpg') no-repeat center center/cover;
     width: 99vw;
-    height: 30vh;
+    opacity: .8;
+    filter: brightness(50%);
+    height: 40vh;
     z-index: -1;
     position: absolute;
     left: 0;
     
 }
-#experience{
+
+/* Counter Section  */
+
+#Counter-Section{
+    background-color: #FAB700;
+    padding: 5rem;
+    margin: 2rem 0;
+}
+#counter{
+    display: flex;
+}
+.counter-box{
+    padding: 3rem;
+    width: 20%;
+}
+
+/* Testimonial Section  */
+
+#testimonial{
     text-align: center;
+    padding: 5rem;
+}
+#testimonial-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+}
+.testimonial-box-title{
     justify-content: center;
-    align-items: center;
+}
+.grid-box:hover .testimonial-box-title{
+    color: #FAB700;
+}
+.checked{
+    color: #FAB700;
 }
