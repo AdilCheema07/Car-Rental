@@ -44,6 +44,7 @@ body{
 .pbtn:hover{
     background-color: #fab70000;
     border: 2px solid #FAB700;
+    color: #FAB700;
 }
 
 /* Navbar Section  */
@@ -263,4 +264,20 @@ body{
 }
 .checked{
     color: #FAB700;
+}
+
+/* Global Network Section  */
+
+#network{
+    display: flex;
+    padding: 5rem;
+}
+#network img{
+    width: 40vw;
+}
+#net-left{
+    width: 50%;
+}
+#net-right{
+    padding: 5rem;
 }
